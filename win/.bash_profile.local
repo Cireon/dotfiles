@@ -1,0 +1,7 @@
+export PATH=/c/Program\ Files\ \(x86\)/GnuWin32/bin:$PATH
+export PATH=/c/Python34:$PATH
+
+alias ex="explorer ."
+
+alias l="ls -F --color=always"
+alias la="ls -la --color=always"

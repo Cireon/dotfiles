@@ -1,0 +1,3 @@
+[core]
+    autocrlf = true
+    excludesfile = C:\\Users\\Tom\\Documents\\.gitignore_global

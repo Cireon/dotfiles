@@ -1,12 +1,15 @@
 [user]
 	name = Tom
-	email = tomrijnbeek@gmail.com
-[core]
-	autocrlf = true
-	excludesfile = C:\\Users\\Tom\\Documents\\gitignore_global.txt
+	email = tom@tomrijnbeek.nl
+[include]
+	path = ~/.gitconfig.local
 [push]
 	default = simple
 [color]
+	diff = always
+	branch = always
+	interactive = always
+	status = always
 	ui = true
 [alias]
 	exec = "!exec "
