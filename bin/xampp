@@ -1,0 +1,1 @@
+applicationStarter.exe /c/users/amulware/xampp/xampp-control.exe $* &

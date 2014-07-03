@@ -35,4 +35,12 @@ else
         rm ~/.gitconfig.local
     fi
     ln -s $DIR/$1/.gitconfig.local ~/.gitconfig.local
+
+    if [ $1 == 'win' ]; then
+        if [ -d ~/bin ]; then
+            rm -r ~/bin
+        fi
+
+        ln -s $DIR/bin ~/bin
+    fi
 fi

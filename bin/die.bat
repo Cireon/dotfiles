@@ -1,0 +1,1 @@
+@START shutdown.exe -s -f -t 00
