@@ -1,6 +1,6 @@
 echo 'reloading bash_profile...'
 
-export LESS=' -r':$LESS
+export LESS=' -r'
 export PATH=~/bin:$PATH
 
 source ~/.bash_profile.local
