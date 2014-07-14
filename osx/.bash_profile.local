@@ -19,3 +19,5 @@ alias mysqladmin=/usr/local/mysql/bin/mysqladmin
 
 alias l="ls -F"
 alias la="ls -la"
+
+alias secondskype="sudo /Applications/Skype.app/Contents/MacOS/Skype"
