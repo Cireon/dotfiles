@@ -35,6 +35,7 @@ c()
 
 alias reload=". ~/.bash_profile"
 alias md5="md5sum"
+alias py="python"
 
 asdfghjkl()
 {   echo '
