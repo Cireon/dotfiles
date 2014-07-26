@@ -1,6 +1,6 @@
 echo 'reloading bash_profile...'
 
-export LESS=' -r':$LESS
+export LESS=' -r'
 export PATH=~/bin:$PATH
 
 source ~/.bash_profile.local
@@ -30,7 +30,7 @@ c()
 alias reload=". ~/.bash_profile"
 alias md5="md5sum"
 alias goat='echo baah'
-
+alias py="python"
 asdfghjkl()
 {   echo '
         ▄▄██▀▀▀▀▀▀▀████▄▄▄▄             

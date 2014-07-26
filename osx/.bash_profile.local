@@ -19,3 +19,14 @@ alias mysqladmin=/usr/local/mysql/bin/mysqladmin
 
 alias l="ls -F"
 alias la="ls -la"
+
+alias secondskype="sudo /Applications/Skype.app/Contents/MacOS/Skype"
+alias python=python3
+
+function tabname {
+  printf "\e]1;$1\a"
+}
+
+function winname {
+  printf "\e]2;$1\a"
+}
