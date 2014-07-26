@@ -28,6 +28,7 @@
 	co = checkout
 	cob = checkout -b
 	br = branch 
+	d = diff
 	diff = diff --word-diff
 	dc = diff --cached
 	r = reset
