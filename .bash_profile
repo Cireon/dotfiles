@@ -31,6 +31,8 @@ alias reload=". ~/.bash_profile"
 alias md5="md5sum"
 alias goat='echo baah'
 alias py="python"
+alias up="cd .."
+
 asdfghjkl()
 {   echo '
         ▄▄██▀▀▀▀▀▀▀████▄▄▄▄             
