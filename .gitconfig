@@ -27,6 +27,7 @@
 	ci = commit
 	co = checkout
 	cob = checkout -b
+	count = shortlog -sn
 	br = branch 
 	d = diff
 	diff = diff --word-diff
