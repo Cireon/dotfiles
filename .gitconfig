@@ -28,7 +28,8 @@
 	co = checkout
 	cob = checkout -b
 	b = branch
-    bd = branch -d 
+    bd = branch -d
+	count = shortlog -sn
 	d = diff
 	diff = diff --word-diff
 	dc = diff --cached
