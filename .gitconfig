@@ -27,7 +27,8 @@
 	ci = commit
 	co = checkout
 	cob = checkout -b
-	br = branch 
+	b = branch
+    bd = branch -d 
 	d = diff
 	diff = diff --word-diff
 	dc = diff --cached
@@ -42,4 +43,5 @@
 	sm = submodule
 	smi = submodule update --init
 	smu = submodule update
+    sp = stash pop
 	ss = stash save
