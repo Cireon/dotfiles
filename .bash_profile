@@ -2,6 +2,7 @@ echo 'reloading bash_profile...'
 
 export LESS=' -r'
 export PATH=~/bin:$PATH
+export EDITOR='subl -w'
 
 source ~/.bash_profile.local
 
