@@ -28,7 +28,7 @@
 	co = checkout
 	cob = checkout -b
 	b = branch
-    bd = branch -d
+	bd = branch -d
 	count = shortlog -sn
 	d = diff
 	diff = diff --word-diff
@@ -44,5 +44,6 @@
 	sm = submodule
 	smi = submodule update --init
 	smu = submodule update
-    sp = stash pop
+	sp = stash pop
 	ss = stash save
+	sync = !git pull $1 && git push
