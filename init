@@ -4,21 +4,21 @@ echo 'initialising dot files...'
 if [ ! -d "$DIR/$1" ]; then
     echo 'invalid operating system specified.'
 else
-    if [ -f ~/.bash_profile ]; then
-        mv ~/.bash_profile ~/.bash_profile.bak
+    if [ -f ~/.bashrc ]; then
+        mv ~/.bashrc ~/.bashrc.bak
     fi
-    if [ -L ~/.bash_profile ]; then
-        rm ~/.bash_profile
+    if [ -L ~/.bashrc ]; then
+        rm ~/.bashrc
     fi
-    ln -s $DIR/.bash_profile ~/.bash_profile
+    ln -s $DIR/.bashrc ~/.bashrc
 
-    if [ -f ~/.bash_profile.local ]; then
-        mv ~/.bash_profile.local ~/.bash_profile.local.bak
+    if [ -f ~/.bashrc.local ]; then
+        mv ~/.bashrc.local ~/.bashrc.local.bak
     fi
-    if [ -L ~/.bash_profile.local ]; then
-        rm ~/.bash_profile.local
+    if [ -L ~/.bashrc.local ]; then
+        rm ~/.bashrc.local
     fi
-    ln -s $DIR/$1/.bash_profile.local ~/.bash_profile.local
+    ln -s $DIR/$1/.bashrc.local ~/.bashrc.local
 
     if [ -f ~/.gitconfig ]; then
         mv ~/.gitconfig ~/.gitconfig.bak
@@ -36,11 +36,26 @@ else
     fi
     ln -s $DIR/$1/.gitconfig.local ~/.gitconfig.local
 
+    if [ -d ~/profile.d ]; then
+        rm -r ~/profile.d
+    fi
+    ln -s $DIR/profile.d ~/profile.d
+
     if [ $1 == 'win' ]; then
         if [ -d ~/bin ]; then
             rm -r ~/bin
         fi
 
         ln -s $DIR/bin ~/bin
+    fi
+
+    if [ $1 == 'osx' ]; then
+        if [ -f ~/.bash_profile ]; then
+            mv ~/.bash_profile ~/.bash_profile.bak
+        fi
+        if [ -L ~/.bash_profile ]; then
+            rm ~/.bash_profile
+        fi
+        ln -s $DIR/$1/.bash_profile ~/.bash_profile
     fi
 fi
