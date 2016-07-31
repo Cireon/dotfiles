@@ -25,6 +25,7 @@
 	st = status -s
 	cl = clone
 	ci = commit
+    cia = commit --amend
 	co = checkout
 	cob = checkout -b
 	b = branch

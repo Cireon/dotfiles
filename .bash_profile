@@ -2,25 +2,19 @@ echo 'reloading bash_profile...'
 
 export LESS=' -r'
 export PATH=~/bin:$PATH
-export EDITOR='subl -w'
+export EDITOR=subl_wait
 
 source ~/.bash_profile.local
 
+GIT_PS1_SHOWDIRTYSTATE=true
+
+export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$(__git_ps1)\$ "
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
-
-# Git aliases
-alias log2="git log --graph --decorate=short"
-alias tree="git log --graph --simplify-by-decoration --pretty=format:'%C(green)%cr %C(white)%d' --all"
-alias log="git log --graph --pretty=format:'%Cgreen%cr %C(bold blue)<%an> %Creset%s %Cred%+d' --branches"
-alias git-root='cd $(git rev-parse --show-cdup)'
+alias ls='ls -GFh'
 
 # Laravel aliases
 alias artisan="php artisan"
-
-# Folder aliases
-alias dev="c ~/dev"
-alias edu="c ~/edu"
 
 # More aliases
 function c()
@@ -57,28 +51,27 @@ alias reload=". ~/.bash_profile"
 alias md5="md5sum"
 alias goat='echo baah'
 alias py="python"
-#alias up="cd .."
 
 asdfghjkl()
 {   echo '
-        ▄▄██▀▀▀▀▀▀▀████▄▄▄▄             
-     ▄██▀                 ▀▀██▄▄        
-    ██                        ▀▀█▄▄     
-  ▄█▀                            ▀▀█▄   
- ▄█▀                                █▄  
- █▀                                  ▀█ 
+        ▄▄██▀▀▀▀▀▀▀████▄▄▄▄
+     ▄██▀                 ▀▀██▄▄
+    ██                        ▀▀█▄▄
+  ▄█▀                            ▀▀█▄
+ ▄█▀                                █▄
+ █▀                                  ▀█
 ▄█                  ▄                 ██
 █▀      ██▄▄▄▄▄    ▄█                  █
 █       █▄  ▀██████▀   ▄▄          ██  █
 █        ▀█▄▄▄█▀       ██▀▀██▄▄▄▄▄▄█  ▄█
 █                       ▀▄▄▄▀▀▀██▀    █▀
-█▄     ▄▄                  ▀▀▀▀▀    ▄█▀ 
- █▄    █    ▄▄▄▄                   ▄█   
-  █▄  ▀█▄  ▀▀▀███████▄▄▄   ▄     ▄█▀    
-   █▄             ▀▀▀  █   █    ██      
-    ▀█▄▄                 ██   ▄█▀       
-      ▀▀█▄▄▄             ▄▄▄█▀▀         
-          ▀▀█▀▀███▄▄▄███▀▀▀             
+█▄     ▄▄                  ▀▀▀▀▀    ▄█▀
+ █▄    █    ▄▄▄▄                   ▄█
+  █▄  ▀█▄  ▀▀▀███████▄▄▄   ▄     ▄█▀
+   █▄             ▀▀▀  █   █    ██
+    ▀█▄▄                 ██   ▄█▀
+      ▀▀█▄▄▄             ▄▄▄█▀▀
+          ▀▀█▀▀███▄▄▄███▀▀▀
            █▀                           '
 }
 # Setting PATH for Python 3.4
