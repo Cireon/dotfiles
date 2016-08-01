@@ -2,6 +2,7 @@ alias bash_refresh="source ~/.bashrc"
 
 # Folder navigation aliases
 alias ls='ls -GFh'
+ls --color=auto &> /dev/null && alias ls='ls -Fh --color=auto' ||
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
