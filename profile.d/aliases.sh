@@ -41,3 +41,7 @@ alias artisan='php artisan'
 # Misc
 alias md5='md5sum'
 alias py='python'
+alias g='git'
+
+# Autocomplete for aliases
+complete -o default -o nospace -F _git g
